@@ -1,0 +1,22 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+"compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["@types/node", "nuxt"]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "app.vue",
+    "pages/**/*.vue",
+    "components/**/*.vue",
+    "composables/**/*.ts",
+    "plugins/**/*.ts"
+  ]
+}
